@@ -1,7 +1,7 @@
 node('master') {
   
    stage 'Git Checkout'
-     git 'https://github.com/harishchanderdalal/jenkinsPipelineBuildTestDeploy.git'
+     git 'https://github.com/Swaty0908/spring-petclinic.git'
          echo 'checkout done'
 
    stage 'Maven Validate'
