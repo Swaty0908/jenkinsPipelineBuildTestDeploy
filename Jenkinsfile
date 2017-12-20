@@ -7,11 +7,6 @@ node('master') {
    stage('Maven Build'){
       echo 'Maven Project Compile'
       maven 'clean install'
-      post {
-          success {
-              junit 'target/surefire-reports/**/*.xml' 
-          }
-      }
    }
 
 
